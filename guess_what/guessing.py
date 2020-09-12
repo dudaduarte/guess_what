@@ -1,4 +1,5 @@
 import random
+from guess_what import io
 
 def play():
     print('*********************************')
@@ -6,9 +7,7 @@ def play():
     print('*********************************')
 
     print('Níveis:')
-    print('1 - Fácil')
-    print('2 - Médio')
-    print('3 - Difícil')
+    io.print_enumerated_list(['Fácil', 'Médio', 'Difícil'])
 
     dificulty = int(input('Digite o número correspondente à dificuldade que deseja jogar: '))
     secret_number = random.randrange(1, 101)
