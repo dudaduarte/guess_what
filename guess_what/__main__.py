@@ -1,5 +1,5 @@
-import hangman
-import guessing
+from guess_what import hangman
+from guess_what import guessing
 
 def select_game():
     print('Jogos disponíveis:')
